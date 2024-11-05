@@ -21,7 +21,6 @@ public class TaskService {
    public Set<String> findOwners() {
       Set<String> owners = taskRepository.findOwners();
       for (String owner : owners) {
-         taskRepository.findByOwnerAndCompletedDateBetweenOrCompletedDateNull(owner, in);
       }
       return null;
    }

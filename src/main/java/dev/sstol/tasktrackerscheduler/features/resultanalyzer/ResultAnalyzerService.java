@@ -31,7 +31,7 @@ public class ResultAnalyzerService {
       Timestamp cronTimestamp = cronTimestampParser.parse(analyzeTasksCronExpression);
       
       for (String owner : owners) {
-         taskRepository.findByOwnerAndCompletedDateBetweenOrCompletedDateNull(owner, in);
+//         taskRepository.findByOwnerAndCompletedDateBetweenOrCompletedDateNull(owner, in);
       }
    }
 }
